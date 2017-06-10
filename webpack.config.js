@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   entry: [
     './src/index.js'
@@ -17,6 +19,10 @@ module.exports = {
     }]
   },
   resolve: {
+    root: path.resolve(__dirname),
+    alias: {
+      PostsIndex: 'src/components/posts_index.js'
+    },
     extensions: ['', '.js', '.jsx']
   },
   devServer: {
