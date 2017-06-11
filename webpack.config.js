@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   entry: [
@@ -29,4 +29,4 @@ module.exports = {
     historyApiFallback: true,
     contentBase: './'
   }
-};
+}
