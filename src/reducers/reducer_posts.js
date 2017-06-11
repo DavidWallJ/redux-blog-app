@@ -7,8 +7,7 @@ import { FETCH_POSTS } from '../actions';
 export default function(state = {}, action) {
   switch (action.type) {
     case FETCH_POSTS:
-      console.log("posts:", _.mapKeys(actions.payload, 'id'));
-      return _.mapKeys(actions.payload, 'id')
+      return _.mapKeys(action.payload.data, 'id')
       // this lodash function will assign the 'id' property as key for the each object
     default:
       return state;

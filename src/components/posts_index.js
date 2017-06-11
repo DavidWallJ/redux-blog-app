@@ -12,7 +12,7 @@ class PostsIndex extends Component {
   }
 
   render() {
-    console.log('posts: ', this.props.posts);
+    console.log(this.props.posts);
     return (
       <div>
         Posts Index
