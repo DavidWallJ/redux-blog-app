@@ -21,7 +21,10 @@ module.exports = {
   resolve: {
     root: path.resolve(__dirname),
     alias: {
-      PostsIndex: 'src/components/posts_index.js'
+      Actions: 'src/actions/index.js',
+      PostsIndex: 'src/components/posts_index.js',
+      PostsNew: 'src/components/posts_new.js',
+      PostsShow: 'src/components/posts_show.js'
     },
     extensions: ['', '.js', '.jsx']
   },
