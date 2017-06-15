@@ -18,8 +18,7 @@ class PostsIndex extends Component {
       // the problem is here.  posts aren't in proper format.
       return (
         <li className="list-group-item" key={post.id}>
-          {post.title}
-          {post.id}
+          <Link to={`/posts/${post.id}`}>{post.title}</Link>
         </li>
       );
     });
